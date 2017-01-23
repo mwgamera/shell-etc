@@ -6,3 +6,5 @@ install_nvm() {
   git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" origin`
   . "$NVM_DIR/nvm.sh"
 }
+
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" ]
